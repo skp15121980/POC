@@ -1,4 +1,4 @@
-package com.springthymeleaf.bean;
+package com.jpmorgan.ctrac.bean;
 
 public class FileDetails {
 

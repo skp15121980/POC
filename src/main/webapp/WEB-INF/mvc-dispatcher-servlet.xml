@@ -9,10 +9,9 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
-	<context:component-scan base-package="com.springthymeleaf.controller" />
+	<context:component-scan base-package="com.jpmorgan.ctrac.controller" />
 
 	<mvc:annotation-driven />
-
 
 	<bean id="templateResolver"
 		class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
