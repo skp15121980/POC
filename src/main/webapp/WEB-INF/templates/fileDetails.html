@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>Fetching File list</title>
+        <title>Fetching list of files</title>
         <link rel="stylesheet" href="../../../css/main-static.css" th:href="@{/css/main.css}" />
         <meta charset="utf-8" />
     </head>
     <body>
        
-         <h1 align="center">File list inside Zip</h1>
+         <h1 align="center">List of files inside zip file</h1>
         <table border="1" bordercolor="black" align="center">
             <thead>
                 <tr>
-                    <th>CollaterID</th>
+                    <th>CollateralID</th>
                     <th>File Name</th>
                 </tr>
             </thead>
             <tbody>
                 <tr th:each="file : ${fileList}">
-                    <td th:text="${file.collateralID}">Red chair</td>
-                   <td th:text="${file.fileName}">Red chair</td>
+                    <td th:text="${file.collateralID}">52342432</td>
+                   <td th:text="${file.fileName}">Test</td>
                 </tr>
                 
             </tbody>
@@ -26,7 +26,7 @@
         
          <form action="#" th:action="@{/moveFile}" th:object="${fileDetails}" method="post">
     	
-        <p align="center"><input type="submit" value="Move File" /> <input type="reset" value="Reset" /></p>
+        <p align="center"><input type="submit" value="Move File" /></p>
     </form>
     </body>
 </html>
